@@ -1,0 +1,33 @@
+.special {
+    background-color: #1976d2;
+    color: #ffffff;
+  }
+  
+  .item {
+    font-weight: bold;
+  }
+  .clearance {
+    border: 2px solid #d4b91e;
+  
+  }
+  .clearance2 {
+    border: 2px solid #61d41e;
+  
+  }
+  .item-clearance {
+    font-style: italic;
+  
+  }
+  
+  .new-class {
+    background-color: #ed1b2f;
+    font-style: italic;
+    color: #fff;
+  }
+  
+  
+  /*
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at http://angular.io/license
+  */

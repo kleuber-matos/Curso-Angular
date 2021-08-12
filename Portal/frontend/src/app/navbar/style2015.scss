@@ -1,0 +1,199 @@
+/**
+ * FOLHA DE ESTILOS PARA AS MUDANÇAS NO PORTAL DO SENADO DE 2015
+ */
+
+ @charset "utf-8";
+ /* CSS Document */
+ 
+ /**
+  * HEADER
+  */
+ header{
+   color: #FFF;
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+ }
+ header div {
+   height: 48px;
+ }
+ 
+ /*****
+  * MENU DROPDOWN DOS PORTAIS (TOPO DIREITO)
+  *****/
+ #menu-comando {
+     cursor: pointer;
+     opacity: 0.7;
+     filter: alpha(opacity=75);
+     width: 126px;
+     float:right;
+     z-index: 999;
+     color:#fff;
+   text-align: right;
+ }
+ #menu-comando:hover{opacity:1;filter:alpha(opacity=100);}
+ #menu-comando + .tooltip.in{opacity: 1 !important;filter: alpha(opacity=100)!important;}
+ 
+ #menu-portais {
+   background-color: #1A456C;
+   border-radius: 0;
+   margin-right: 1em;
+   padding: 5px 20px;
+ }
+ 
+ #menu-portais a {
+   color: #FFF;
+   font-size: 12px;
+   padding: 6px 0;
+ }
+ #menu-portais a:hover {
+   background-color: #1A456C;
+   color: #FFF !important;
+ }
+ 
+ #menu-portais li {
+   border-bottom: 1px solid #1A9FDD;
+ }
+ #menu-portais li:last-child {
+   border-bottom: none;
+ }
+ 
+ .identificacao-site {
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+   font-size: 40px;
+   color: #3E6892;
+   padding: 20px 0;
+ }
+ 
+ /*****
+  * MENU PRINCIPAL
+  *****/
+ #menu-principal-portal nav.navbar-default {
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+   background: none;
+   border: none;
+   border-radius: 0;
+   border-top: 1px dotted #CCC;
+   border-bottom: 5px solid #3E6892;
+   box-shadow: none;
+   margin-bottom: 0 ;
+ }
+ #navbar-portal-comissoes > ul > li > a {
+   /* PRIMEIRO NÍVEL DE MENU */
+   color: #777;
+   font-size: 16px;
+   background-color: #fff;
+ }
+ #navbar-portal-comissoes > ul > li > a:hover {
+   color: #333;
+ }
+ #navbar-portal-comissoes .dropdown-menu {
+   background-color: #F7F7F7;
+   border: none;
+   border-radius: 0;
+   border-bottom: 5px solid #3E6892;
+ }
+ #navbar-portal-comissoes .dropdown-menu a {
+   /* DROPDOWN MENUS TODOS OS NÍVEIS */
+       color: #333;
+ }
+ 
+ /* "SETAS" INDICADORAS DE MENU DROPDOWN */
+ #navbar-portal-comissoes > ul > li > a .caret {
+   color: #0AF;
+ }
+ #navbar-portal-comissoes > ul > li > a:hover .caret {
+   color: #0077B3;
+ }
+ 
+ .navbar-default .navbar-nav>.open>a {
+   background-color: #fff;
+ }
+ 
+ /*****
+  * TRILHA DE NAVEGAÇÃO (BREADCRUMBS)
+  *****/
+ .breadcrumb { font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif; background-color:#FFF; margin: 0; padding: 0px 10px; }
+ .breadcrumb li { font-size: 14px; }
+ .breadcrumb > li + li:before {
+     color: #00315C;
+ }
+ 
+ .breadcrumb a {
+   color: #3e6892;
+ }
+ 
+ /*****
+  * RODAPÉ
+  *****/
+ #sf-rodape {
+   background-image: url(../images/bg_navbar.gif);
+   font-family: 'Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
+ }
+ #sf-rodape h6 {
+   color: #666;
+   font-weight: bold;
+   font-size: 13px;
+   margin: .9em 0;
+ }
+ #sf-rodape a {
+   color: #27425c;
+ }
+ #sf-rodape a.ShareIcon {
+   color: #fff;
+ }
+ #sf-rodape ul {
+   margin-bottom: 20px;
+ }
+ #sf-rodape ul > li {
+   font-size: 12px;
+ }
+ 
+ #sf-rodape .h6Second {
+   font-weight: bold;
+   color: #666;
+   margin: 1.6em 0 .8em 0;
+ }
+ 
+ .link-rodape {
+   font-size: 12px;
+   color: #666;
+   margin: 0;
+ }
+ 
+ #sf-rodape-endereco {
+   background-color: #002e56;
+   color: #FFF;
+   font-size: 11px;
+   text-align: center;
+ }
+ 
+ #sf-rodape-final {
+   border-top: 1px solid #FFF;
+   font-size: 12px;
+   line-height: 40px;
+   margin-top: 6px;
+ }
+ 
+ #sf-rodape .box {
+   border-bottom: 1px solid #fff; 
+   padding-bottom: 10.67px;
+ }
+ 
+ #sf-rodape .FooterMain-hlink {
+   text-decoration: none;
+   font-size: 12px;
+   font-weight: bold;
+   color: rgb(102, 102, 102);
+   cursor: auto;
+   display: block;
+ }
+ 
+ #sf-rodape .FooterMain-link {
+   color: #333;
+ }
+ 
+//  @media print {
+//    color: rgb(102, 50, 9);
+//    font-size: 5px;
+//  }
+ 
+ 

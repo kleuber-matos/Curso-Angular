@@ -1,0 +1,125 @@
+.top-navbar {
+  line-height: 35px;
+  width: 100%;
+  display: flex;
+}
+
+
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.senado-logo {
+  width: 170px;
+  height: 23px;
+}
+
+.top {
+  color:transparent;
+}
+
+.navbar-toggler.hidden-sm-up, #dropdownManual {
+  color: lightgray;
+  font-size: 15px;
+}
+
+.navbar-toggler.hidden-sm-up:hover, #dropdownManual:hover {
+  color: snow;
+}
+
+.middle-label-top-navbar {
+  color:white;
+  font-size: 12px;
+
+  background-color: unset !important;
+}
+
+.blue-portal {
+  margin: 10px;
+  font-size: 40px; 
+  font-weight: 400;
+  width: 100%;
+}
+
+.green-nav {
+  height: 4px;
+  background-color: green;
+  width: 100%;
+}
+
+.yellow-nav {
+  height: 4px;
+  background-color: yellow;
+  width: 100%; 
+}
+
+.blue-nav {
+  height: 4px;
+  background-color: #3e6892;
+  width: 100%; 
+}
+
+.title-atividade-legislativa {
+  color: #337ab7;
+}
+
+.title-atividade-legislativa:hover {
+  text-decoration: underline; 
+  background-color: rgb(255, 255, 255);
+}
+
+.horizontal_dotted_line {
+  border-bottom: 1px dotted gray;
+  margin-top: 5px;
+}
+
+.noHover {
+  background-color: unset !important;
+  color: unset !important;
+
+}
+
+.menu-color {
+  color: #777;
+  font-size: 16px;
+}
+
+.Nav-secundaria {
+font-size: 13px;
+padding: 0 15px;
+line-height: 30px;
+border: none;
+border-radius: 0;
+background-color: #f7f7f7;
+min-height: 30px;
+margin-bottom: 0;
+width: 100%;
+}
+
+.nav {
+ float: right;
+ column-count: 3;
+ column-gap: 10px;
+ column-rule: 4px #be1515;
+ column-rule-style: solid;
+}
+
+.nav-secundaria-separador {
+  height: 10x;
+  padding-right : 10px;
+  border-right: 1px solid #ccc; 
+}
+
+.nav-secundaria-link {
+  color: #558fc1;
+}
+
+.nav-secundaria-link:hover {
+  background-color: #ebedf3;
+  text-decoration: none;
+}

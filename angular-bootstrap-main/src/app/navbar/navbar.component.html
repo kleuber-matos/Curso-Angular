@@ -1,0 +1,305 @@
+<!--TOPO PORTAL-->
+
+<div class="top-navbar">
+  <div class="pull-left">
+    <a
+      class="noHover"
+      ngbDropdownItem
+      href="http://www.senado.leg.br/"
+      title="Volta para a página inicial."
+    >
+      <img src="../../assets/senado.svg"
+    /></a>
+  </div>
+  <div>
+    <a
+      class="middle-label-top-navbar"
+      ngbDropdownItem
+      href="http://www.senado.leg.br/senado/falecomosenado/"
+    >
+      Fale com o Senado</a
+    >
+  </div>
+
+  <div ngbDropdown #myDrop="ngbDropdown">
+    <button class="btn" id="dropdownManual" (click)="myDrop.toggle()">
+      &#9776; Portais
+    </button>
+    <div
+      ngbDropdownMenu
+      aria-labelledby="navbarDropdown1"
+      class="dropdown-menu btn-menu"
+    >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/institucional"
+        >Institucional</a
+      >
+      <a ngbDropdownItem href="http://www25.senado.leg.br/web/senadores/"
+        >Senadores</a
+      >
+      <a ngbDropdownItem href="http://www25.senado.leg.br/web/atividade/"
+        >Atividade Legislativa</a
+      >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/noticias/"
+        >Notícias</a
+      >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/publicacoes/"
+        >Publicação e Documentação</a
+      >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/orcamento/"
+        >Orçamento</a
+      >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/transparencia/"
+        >Transparência</a
+      >
+      <a ngbDropdownItem href="http://www12.senado.leg.br/ecidadania/"
+        >e-Cidadania</a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="green-nav"></div>
+<div class="yellow-nav"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <!-- IDENTIFICAÇÃO DO SITE -->
+
+  <div class="blue d-none d-md-block">
+    <h1 class="blue-portal">
+      <a
+        class="title-atividade-legislativa"
+        ngbDropdownItem
+        href="https://www25.senado.leg.br/web/atividade/home"
+      >
+        Atividade Legislativa
+      </a>
+    </h1>
+  </div>
+
+ 
+  <!-- 
+  <button
+    class="navbar-toggler btn btn-outline-primary"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbarTogglerDemo02"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="d-hidden-sm d-hidden-md d-hidden-lg">
+    <a class="navbar-brand" href="#">Menu</a>
+  </div> -->
+
+  <div
+    role="button"
+    class="d-md-none d-flex py-2 px-4 align-items-center text-body sidebar-collapsed"
+  >
+    <span class="mr-auto">Menu</span>
+    <button
+      class="navbar-toggler btn btn-outline-primary"
+      style="float: right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarTogglerDemo02"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<nav>
+  <div class="horizontal_dotted_line"></div>
+</nav>
+
+<nav class="navbar navbar-expand-lg">
+  <div
+    class="collapse navbar-collapse"
+    id="navbarTogglerDemo02"
+    [ngbCollapse]="isCollapsed"
+  >
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active" ngbDropdown>
+        <a
+          ngbDropdownItem
+          class="nav-link"
+          tabindex="0"
+          ngbDropdownToggle
+          id="navbarDropdown1"
+          role="button"
+        >
+          Plenário
+        </a>
+        <div
+          ngbDropdownMenu
+          aria-labelledby="navbarDropdown1"
+          class="dropdown-menu"
+        >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/sessao-plenaria"
+            >Sess&atilde;o Plen&aacute;ria</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www.senado.gov.br/atividade/plenario/ordemdodia"
+            >Ordem do Dia</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/pronunciamentos"
+            >Pronunciamentos</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/questoes-de-ordem"
+            >Quest&otilde;es de Ordem</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/votacoes-nominais"
+            >Vota&ccedil;&otilde;es Nominais</a
+          >
+        </div>
+      </li>
+
+      <li class="nav-item active menu" ngbDropdown>
+        <a
+          ngbDropdownItem
+          class="nav-link menu"
+          tabindex="0"
+          ngbDropdownToggle
+          id="navbarDropdown1"
+          role="button"
+        >
+          Projetos e Matérias
+        </a>
+        <div
+          ngbDropdownMenu
+          aria-labelledby="navbarDropdown1"
+          class="dropdown-menu"
+        >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/materias"
+            >Pesquisas</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/materias/acompanhamento/minhas-materias"
+            >Acompanhamento de matérias</a
+          >
+        </div>
+      </li>
+
+      <li class="nav-item active">
+        <a ngbDropdownItem class="nav-link" href="#">Comissões</a>
+      </li>
+
+      <li class="nav-item active" ngbDropdown>
+        <a
+          ngbDropdownItem
+          class="nav-link"
+          tabindex="0"
+          ngbDropdownToggle
+          id="navbarDropdown1"
+          role="button"
+        >
+          Relatórios Legislativos
+        </a>
+        <div
+          ngbDropdownMenu
+          aria-labelledby="navbarDropdown1"
+          class="dropdown-menu"
+        >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/estatisticas"
+            >Estatísticas</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/resenhas"
+            >Resenhas</a
+          >
+          <a
+            ngbDropdownItem
+            ngbDropdownItem
+            href="http://www25.senado.leg.br/web/atividade/relatorio-da-presidencia"
+            >Relat&oacute;rios da Presid&ecirc;ncia</a
+          >
+        </div>
+      </li>
+
+      <li class="nav-item active">
+        <a
+          ngbDropdownItem
+          class="nav-link"
+          href="http://www25.senado.leg.br/web/atividade/legislacao"
+          >Legislação</a
+        >
+      </li>
+
+      <li class="nav-item active">
+        <a
+          ngbDropdownItem
+          class="nav-link"
+          href="http://www25.senado.leg.br/web/atividade/conselhos"
+          >Órgãos do Parlamento</a
+        >
+      </li>
+
+      <li class="nav-item active">
+        <a
+          ngbDropdownItem
+          class="nav-link"
+          href="http://www25.senado.leg.br/web/atividade/autoridades"
+          >Autoridades</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="blue-nav"></div>
+<nav class="Nav-secundaria">
+  <ul class="nav">
+    <li>
+      <a
+        class="nav-secundaria-separador nav-secundaria-link"
+        href="http://www12.senado.leg.br/multimidia"
+        >Portal Multimídia</a
+      >
+    </li>
+    <li>
+      <a
+        class="nav-secundaria-separador nav-secundaria-link"
+        href="http://legis.senado.leg.br/diarios/Diario"
+        >Diários e Anais</a
+      >
+    </li>
+    <li>
+      <a class="nav-secundaria-link" href="http://dadosabertos.senado.leg.br/"
+        >Dados Abertos</a
+      >
+    </li>
+  </ul>
+</nav>
